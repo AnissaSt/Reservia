@@ -1,0 +1,765 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header{                                                    /*Mon header complet*/
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 5vh;
+    padding-right: 12vh;
+    
+}
+
+#header-rigth{                                              /*Tout mes bouton header*/
+    display: flex;
+    
+    gap: 10vh;
+    
+    align-items: center;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+#inscription{                                               /*Bouton inscription*/
+    color: #0065FC;
+
+    font-family: "Raleway", sans-serif;
+    font-size: large;
+    font-weight: 700;
+}
+
+
+
+#hebergement{                                                /*Bouton Hébergement*/
+    color: #0065FC;
+
+    font-family: "Raleway", sans-serif;
+    font-size: medium;
+    font-weight: 500;
+}
+
+
+#slogan :first-child{                                        /*Première balise p de ma nav*/
+
+    font-family: "Raleway", sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+
+    padding-left: 5vh;
+}
+
+#slogan :nth-child(2){                                       /*Deuxième balise p de ma nav*/
+
+    font-family: "Raleway", sans-serif;
+    font-size: medium;
+    font-weight: 500;
+
+    padding-left: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+}
+
+#search{                                                      /*Barre de recherche dans ma nav*/
+
+    display: flex;
+
+    padding-left: 5vh;
+    padding-bottom: 4vh;
+
+}
+
+#site-search{
+    
+    border: 1px solid;
+    border-color: #F2F2F2;
+
+    padding-left: 2vh;
+
+    font-family: "Raleway", sans-serif;
+    font-size: large;
+    font-weight: 600;
+
+}
+
+#search i{
+    display: flex;
+    
+    align-items: center;
+
+    padding-left: 1.8vh;
+
+    background-color: #F2F2F2;
+
+    width: 5vh;
+    height: 5.5vh;
+
+    border-top-left-radius: 1.8vh;
+    border-bottom-left-radius: 1.8vh;
+}
+
+#search p{
+
+    display: flex;
+
+    align-items: center;
+
+    color: white;
+
+    background-color: #0065FC;
+
+    border-top-right-radius: 1.8vh;
+    border-bottom-right-radius: 1.8vh;
+
+    width: 15vh;
+    height: 5.5vh;
+
+    padding-left: 1.5vh;
+
+    font-family: "Raleway", sans-serif;
+    font-size: large;
+    font-weight: 600;
+}
+
+
+#filtres{                                                   /*Sélèctionne tout les filtres*/
+
+    display: flex;
+
+    gap: 5vh;
+
+    padding-bottom: 4vh;
+}
+
+
+#filtres p{
+    display: flex;
+    align-items: center;
+
+    font-family: "Raleway", sans-serif;
+    font-size: large;
+    font-weight: 700;
+
+    padding-left: 5vh;
+}
+
+
+#filtres div i{                                             /*Sélèctionne toutes les icones*/
+
+    display: flex;
+    align-items: center;
+
+    width: 5vh;
+    height: 5vh;
+
+    background-color: #e3e6f7;
+
+    border-radius: 3vh;
+}
+
+#filtres div h3{
+
+    font-family: "Raleway", sans-serif;
+    font-size: large;
+    font-weight: 700;
+}
+
+.filtres-child{                                            /*Sélèctionne chaque bloque de filtres icones et texte*/
+
+    display: flex;
+
+    align-items: center;
+
+    height: 5vh;
+
+}
+
+
+#filtres-1{                                             /*Sélèctionne le contenue entier de chaque catégorie de filtres*/
+
+    border-radius: 3vh;
+
+    width: 20vh;
+
+    gap: 1.3vh;
+
+    border: 0.3vh solid;
+    border-color: #d3d0d0;
+    border-left-style: none;
+}
+
+#filtres-2{
+
+    border-radius: 3vh;
+
+    width: 17vh;
+
+    gap: 1.4vh;
+
+    border: 0.3vh solid;
+    border-color: #d3d0d0;
+    border-left-style: none;
+}
+
+
+#filtres-3{
+
+    border-radius: 3vh;
+
+    width: 20vh;
+
+    gap: 1.2vh;
+
+    border: 0.3vh solid;
+    border-color: #d3d0d0;
+    border-left-style: none;
+}
+
+
+#filtres-4{
+
+    border-radius: 3vh;
+
+    width: 26vh;
+
+    gap: 1.8vh;
+
+    border: 0.3vh solid;
+    border-color: #d3d0d0;
+    border-left-style: none;
+}
+
+
+#filtres-i-1{                                           /*Sélèctionne chacunne des icones de chaques catégorie de filtres*/
+
+    padding-left: 1.4vh;
+
+    color: #0065FC;
+
+}
+
+#filtres-i-2{
+
+    padding-left: 1.8vh;
+
+    color: #0065FC;
+}
+
+
+#filtres-i-3{
+
+    padding-left: 1.6vh;
+
+    color: #0065FC;
+}
+
+
+#filtres-i-4{
+
+    padding-left: 1.6vh;
+
+    color: #0065FC;
+}
+
+
+
+#info{
+
+    display: flex;
+
+    padding-left: 5vh;
+
+    gap: 0.8vh;
+
+    font-family: "Raleway", sans-serif;
+    font-size: medium;
+    font-weight: 500;
+}
+
+
+
+
+#main{                                                  /*Toute la section Hebergement a marseille*/
+    background-color: #F2F2F2;
+    
+    width: 130vh;
+    height: 88vh;
+
+    margin: 5vh;
+    padding: 5vh;
+
+    
+    border-radius: 2em;
+
+}
+
+
+#main-2{                                                /*Toute la section Les plus populaires*/
+
+    background-color: #F2F2F2;
+
+    width: 60vh;
+
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-right: 5vh;
+    padding: 5vh;
+
+    border-radius: 2em;
+}
+
+#header-main2{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-main2 h3{                                       /*h3 Les plus populaires*/
+
+    font-family: "Raleway", sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+
+    padding-left: 0.6vh;
+}
+
+
+
+
+main{
+
+    display: flex;
+}
+
+#main h3{                                           /*Header Hébergement a marseille*/
+
+    font-family: "Raleway", sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+
+    padding-bottom: 2vh;
+    padding-left: 3.5vh;
+}
+
+#afficher{                                                            /*Boutton Afficher plus*/
+
+    font-family: "Raleway", sans-serif;
+    font-size: large;
+    font-weight: 700;
+
+    padding-left: 3.5vh;
+
+    /* background-color: #0065FC; */
+}
+
+.hosting{
+
+    background-color: white;
+
+    border-radius: 1.5em;
+
+    height: 29vh;
+
+    box-shadow: -5px 10px 10px -5px #17141424;
+
+}
+
+.hosting img{
+
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
+
+    padding: 0.5vh;
+
+    object-fit: cover;
+}
+
+.hosting-flex{
+
+   display: flex;
+
+   justify-content: space-between;
+
+   padding: 3vh;
+
+   gap: 3vh;
+}
+
+.hosting h4{
+
+    font-family: "Raleway", sans-serif;
+    font-size: medium;
+    font-weight: 700;
+
+    padding-left: 1.5vh;
+    padding-bottom: 0.8vh;
+}
+
+.hosting p{
+
+    font-family: "Raleway", sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+
+    padding-left: 1.5vh;
+    padding-bottom: 0.8vh;
+}
+
+.hosting i{
+
+    color: #0065FC;
+}
+
+.star{
+
+    padding-left: 1.5vh;
+
+}
+
+/* .star-gray {
+
+    color: red;
+} */
+
+
+
+#hosting-right{                                             /*Les hébergement les plus populaires premiere div*/
+
+    border-radius: 1.5em;
+
+}
+
+#hosting-right img{
+
+    border-top-left-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
+
+    padding: 0.5vh;
+
+    object-fit: cover;
+}
+
+
+#hosting-right h4{
+
+    
+    font-family: "Raleway", sans-serif;
+    font-size: medium;
+    font-weight: 700;
+}
+
+
+#hosting-right p{
+
+    font-family: "Raleway", sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    
+}
+
+#populaires{                                                 /*Les hébergement les plus populaires deuxieme div*/
+
+
+    display: flex;
+
+    background-color: white;
+    
+    border-radius: 1.5em;
+
+    margin-bottom: 2.5em;
+
+    margin-top: 2em;
+
+    box-shadow: -5px 10px 10px -5px #17141424;
+}
+
+.ensemble{
+
+    padding-left: 2em;
+}
+
+
+#populaires-txt h4{
+    /* display: flex;
+    flex-direction: column; */
+
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    padding-right: 3em;
+    
+}
+
+#populaires-txt{
+
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 3em;
+}
+
+
+#populaires-icone{
+
+    /* display: flex; */
+    /*  */
+    /* align-items: flex-end; */
+
+    color: #0065FC;
+}
+
+
+#populaires1{                                                   /*Les hébergement les plus populaires deuxieme div*/
+
+    display: flex;
+
+    background-color: white;
+    
+    border-radius: 1.5em;
+
+    margin-bottom: 2.5em;
+
+    box-shadow: -5px 10px 10px -5px #17141424;
+}
+
+
+#populaires1-txt h4{
+
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    padding-right: 3em;
+    
+}
+
+#populaires1-txt{
+
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 3em;
+}
+
+
+#populaires1-icone{
+
+    color: #0065FC;
+    padding-top: 0.6em;
+}
+
+#populaires2{                                               /*Les hébergement les plus populaires troisieme div*/
+
+    display: flex;
+
+    background-color: white;
+    
+    border-radius: 1.5em;
+
+    box-shadow: -5px 10px 10px -5px #17141424;
+}
+
+
+#populaires2-txt h4{
+    /* display: flex;
+    flex-direction: column; */
+
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    padding-right: 3em;
+    
+}
+
+#populaires2-txt{
+
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 3em;
+}
+
+
+#populaires2-icone{
+
+    color: #0065FC;
+    padding-top: 0.6em;
+}
+
+                    /*                           ARTICLEEE                                     */
+
+
+article h2{
+
+    font-family: "Raleway", sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+
+    padding-left: 5vh;
+    padding-top: 5vh;
+}
+
+
+#activity{
+    display: flex;
+
+    gap: 5vh;
+
+    margin: 5vh;
+}
+
+#activity img{
+
+    border-radius: 1.5em;
+
+    object-fit: cover;
+
+    box-shadow: 2px 2px 2px 2px #e3dddd20;
+}
+
+
+.back{
+   border-bottom-left-radius: 1.5em;
+   border-bottom-right-radius: 1.5em;
+
+   padding: 2vh;
+
+   
+    background-color: white;
+
+    position: relative;
+
+    bottom: 5vh;
+
+    box-shadow: -5px 10px 10px -5px #17141424;
+}
+
+
+.back1{
+
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
+    
+    margin-bottom: 2vh;
+
+    padding: 2vh;
+    
+    background-color: white;
+
+    position: relative;
+
+    bottom: 5vh;
+
+    box-shadow: -5px 10px 10px -5px #17141424;
+}
+
+.back h3{
+
+    display: flex;
+
+    align-items: center;
+
+    font-family: "Raleway", sans-serif;
+    font-size: medium;
+    font-weight: 800;
+}
+
+.back1 h3{
+
+    display: flex;
+
+    align-items: center;
+
+    font-family: "Raleway", sans-serif;
+    font-size: medium;
+    font-weight: 800;
+}
+
+
+                        /*                                FOOTERRRRR                                 */
+
+footer{
+    background-color: #F2F2F2;
+}
+
+#all-element{
+
+    margin-left: 5vh;
+    
+    padding-top: 2vh;
+    padding-bottom: 5vh;
+
+    display: flex;
+
+    gap: 50vh;
+}
+
+#a-propos h3{                                              /* Footer A propos*/
+
+    font-family: "Raleway", sans-serif;
+    font-size: large;
+    font-weight: 700;
+
+    padding-bottom: 3vh;
+
+    margin-top: 5vh;
+} 
+
+#a-propos p{
+
+    font-family: "Raleway", sans-serif;
+    font-size: medium;
+    font-weight: 500;
+
+    padding-bottom: 2vh;
+}
+
+
+
+
+
+#nos-hebergements h3{                                /*Footer nos hébergements*/
+
+    font-family: "Raleway", sans-serif;
+    font-size: large;
+    font-weight: 700;
+
+    padding-bottom: 3vh;
+
+    margin-top: 5vh;
+} 
+
+#nos-hebergements p{
+
+    font-family: "Raleway", sans-serif;
+    font-size: medium;
+    font-weight: 500;
+
+    padding-bottom: 2vh;
+}
+
+
+
+
+
+
+
+#assistance h3{                                      /*Footer Assistance*/
+
+    font-family: "Raleway", sans-serif;
+    font-size: large;
+    font-weight: 700;
+
+    padding-bottom: 3vh;
+
+    margin-top: 5vh;
+} 
+
+#assistance p{
+
+    font-family: "Raleway", sans-serif;
+    font-size: medium;
+    font-weight: 500;
+
+    padding-bottom: 2vh;
+}
